@@ -6,14 +6,14 @@ This page is to showcase three of my best CS projects created during my undergra
 # Software Design/Engineering
 Picture
 Description
-Code Example
+**Code Example**:
 ```markdown
 This is a place holder for code
 ```
 # Algorithms and Data Structures
 Picture
 Description
-Code Example
+**Code Example**:
 ```markdown
 This is a place holder for code
 ```
@@ -25,7 +25,7 @@ This is an Android inventory app that uses SQLite to authenticate users and trac
 all the basic CRUD operations like adding items, editing items, and deleting items. It also gives the option to 
 only show items that have low inventory by quiering the SQLite database.
 
-Code Example: Function to get low inventory items from the SQLite database based on item count.
+**Code Example**: Function to get low inventory items from the SQLite database based on item count.
 
 ```markdown
 // Get low inventory Items from item table
