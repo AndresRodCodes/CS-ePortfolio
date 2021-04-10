@@ -5,21 +5,21 @@ This page is to showcase three of my best CS projects created during my undergra
 
 # Software Design/Engineering
 1. Picture
-2. Describtion
+2. Description
 3. Code Example
 ```markdown
 This is a place holder for code
 ```
 # Algorithms and Data Structures
 1. Picture
-2. Describtion
+2. Description
 3. Code Example
 ```markdown
 This is a place holder for code
 ```
 # Databases
 1. Picture
-2. Describtion
+2. Description
 3. Code Example
 ```markdown
 This is a place holder for code
