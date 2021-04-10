@@ -5,7 +5,8 @@ This page is to showcase three of my best CS projects created during my undergra
 
 # Software Design/Engineering
 1. Picture
-<img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/AndroidInventoryApp%20Screenshots/Grid%20with%20items.png" width="200" height="400" />
+<img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/AndroidInventoryApp%20Screenshots/Grid%20with%20items.png" width="200" height="400"/>
+
 3. Description
 4. Code Example
 ```markdown
