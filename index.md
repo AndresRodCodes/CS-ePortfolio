@@ -25,8 +25,38 @@ This is an Android inventory app that uses SQLite to authenticate users and trac
 all the basic CRUD operations like adding items, editing items, and deleting items. It also gives the option to 
 only show items that have low inventory by quiering the SQLite database.
 
-Code Example
+Code Example: Function to get low inventory items from the SQLite database based on item count.
 
 ```markdown
-This is a place holder for code
+// Get low inventory Items from item table
+    public ArrayList<Item> getLowInventoryItems(){
+        // ArrayList to hold low inventory items
+        ArrayList<Item> lowInventoryItems = new ArrayList<>();
+        SQLiteDatabase dbItems = getReadableDatabase();
+
+        // Select all items in item database table where item count is less than or equal to 5
+        String sql = "Select * from " + ItemDatabase.ItemTable.TABLE
+                + " where " + ItemTable.COL_ITEM_COUNT + " <= 5"
+                + " order by " + ItemTable.COL_ITEM_COUNT + " ASC";
+        Cursor cursor = dbItems.rawQuery(sql, new String[] {});
+
+        // Place items from ItemDatabase table into the loInventoryItems ArrayList
+        if (cursor.moveToFirst()){
+            do {
+                long id = cursor.getLong(0);
+                String dbItemName = cursor.getString(1);
+                int dbCount = cursor.getInt(2);
+
+                // Add items to ArrayList of Type Item
+                Item item = new Item();
+                item.itemId = id;
+                item.itemName = dbItemName;
+                item.itemCount = dbCount;
+
+                lowInventoryItems.add(item);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return lowInventoryItems;
+    }
 ```
