@@ -5,7 +5,15 @@ This page is to showcase three of my best CS projects created during my undergra
 
 # Software Design/Engineering
 Picture
-Description
+This is a weather station project written in python running on a Raspberry Pi with multiple sensors attached. It reads sensor data, saves it to JSON file, and 
+gives the option to sort that data with a seprate tool I created. I refactored the code from a one file program, to multi page program to increase maintainability and modularity.
+
+List of sensors:
+1. Temperature and humidity
+2. LCD display
+3. Light
+4. Red, blue, green LEDs
+
 **Code Example**:
 ```markdown
 This is a place holder for code
