@@ -29,34 +29,34 @@ Code Example: Function to get low inventory items from the SQLite database based
 
 ```markdown
 // Get low inventory Items from item table
-    public ArrayList<Item> getLowInventoryItems(){
-        // ArrayList to hold low inventory items
-        ArrayList<Item> lowInventoryItems = new ArrayList<>();
-        SQLiteDatabase dbItems = getReadableDatabase();
+public ArrayList<Item> getLowInventoryItems(){
+    // ArrayList to hold low inventory items
+    ArrayList<Item> lowInventoryItems = new ArrayList<>();
+    SQLiteDatabase dbItems = getReadableDatabase();
 
-        // Select all items in item database table where item count is less than or equal to 5
-        String sql = "Select * from " + ItemDatabase.ItemTable.TABLE
-                + " where " + ItemTable.COL_ITEM_COUNT + " <= 5"
-                + " order by " + ItemTable.COL_ITEM_COUNT + " ASC";
-        Cursor cursor = dbItems.rawQuery(sql, new String[] {});
+    // Select all items in item database table where item count is less than or equal to 5
+    String sql = "Select * from " + ItemDatabase.ItemTable.TABLE
+            + " where " + ItemTable.COL_ITEM_COUNT + " <= 5"
+            + " order by " + ItemTable.COL_ITEM_COUNT + " ASC";
+    Cursor cursor = dbItems.rawQuery(sql, new String[] {});
 
-        // Place items from ItemDatabase table into the loInventoryItems ArrayList
-        if (cursor.moveToFirst()){
-            do {
-                long id = cursor.getLong(0);
-                String dbItemName = cursor.getString(1);
-                int dbCount = cursor.getInt(2);
+    // Place items from ItemDatabase table into the loInventoryItems ArrayList
+    if (cursor.moveToFirst()){
+        do {
+            long id = cursor.getLong(0);
+            String dbItemName = cursor.getString(1);
+            int dbCount = cursor.getInt(2);
 
-                // Add items to ArrayList of Type Item
-                Item item = new Item();
-                item.itemId = id;
-                item.itemName = dbItemName;
-                item.itemCount = dbCount;
+            // Add items to ArrayList of Type Item
+            Item item = new Item();
+            item.itemId = id;
+            item.itemName = dbItemName;
+            item.itemCount = dbCount;
 
-                lowInventoryItems.add(item);
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
-        return lowInventoryItems;
+            lowInventoryItems.add(item);
+        } while (cursor.moveToNext());
     }
+    cursor.close();
+    return lowInventoryItems;
+}
 ```
