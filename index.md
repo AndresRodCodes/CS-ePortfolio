@@ -14,9 +14,53 @@ List of sensors:
 3. Light
 4. Red, blue, green LEDs
 
-**Code Example**:
+**Code Example**: This is the entry point to the weather station and the code that brings the different components of the project together.
 ```markdown
-This is a place holder for code
+# Entry point to the weather station program (Main)
+while True:
+    try:
+        # Check if it is daytime hours and daytime conditions
+        isDaytimeHour = WeatherConditions.isDaytimeHours()
+        isDaytimeCondition = WeatherConditions.isDaytimeConditions()
+        
+        isDaytimeHour = True
+        isDaytimeCondition = True
+
+        # If it is daytime hours and daytime conditions get and save sensor data
+        if((isDaytimeHour == True) and (isDaytimeCondition == True)):
+            print("It is daytime hours and daytime conditions")
+            print("isDaytimeHours: " + str(isDaytimeHour))
+            print("isDaytimeConditions: " + str(isDaytimeCondition))
+
+            # Get temp and humidity data
+            [tempC, humidity] = getTempAndHumidity()
+            # Convert temp to F
+            tempF = convertTempCToF(tempC)
+            tempF = round(tempF, 3)
+            currentDate = getCurrentDate()
+            weatherData = WeatherData(currentDate, tempF, humidity)
+
+            # Turn on LED indicators with temp and humidity
+            turnOnLightIndicator(weatherData.tempF, weatherData.humidity)
+
+            # Update LED Screen with temp and humidity
+            # Display temperature and humidity on LED Screen
+            setRGB(0, 255, 255)
+            setText("Temp:" + str(weatherData.tempF) + "F\n" + "Humidity: " + str(weatherData.humidity) + "%")
+
+            # Check for JSON file existence
+            JSONFunctionsObject = JSONFunctions(fileName)
+            JSONFileExists = JSONFunctionsObject.fileExists()
+            print("JSON file exists: " + str(JSONFileExists))
+
+            # Create JSON file if it does not exist
+            if (JSONFileExists == False):
+                print("Creating JSON file...")
+                JSONFunctionsObject.createJSONFile()
+
+            # Open JSON file and append data [date, tempF, humidity]
+            print("Appending weather data...")
+            JSONFunctionsObject.appendJSONFile(weatherData)
 ```
 # Algorithms and Data Structures
 Picture
