@@ -20,10 +20,31 @@ This is a place holder for code
 ```
 # Algorithms and Data Structures
 Picture
-Description
+This is a weather station project written in python running on a Raspberry Pi with multiple sensors attached. The data is saved into a JSON file which is then read by a seperate tool I created in python to show the data sorted by temperature and humidity. The time taken for the sorting algorithm to sort and display that data is then displayed with the output of the sortted data.
+
 **Code Example**:
 ```markdown
-This is a place holder for code
+# Sort by hottest tempurature
+def sortByHottestTempF():
+    startTime = time.time()
+
+    weatherJSONData.sort(reverse=True, key=tempFFunction)
+    totalTime = time.time() - startTime
+
+    weatherJSONDataFormatted = JSONFunctions.formatJSONData(weatherJSONData)
+    print(weatherJSONDataFormatted)
+    print("Time to sort by hottest tempF: %.10f seconds" % totalTime)
+
+# Sort by coldest tempurature
+def sortByColdestTempF():
+    startTime = time.time()
+
+    weatherJSONData.sort(key=tempFFunction)
+    totalTime = time.time() - startTime
+
+    weatherJSONDataFormatted = JSONFunctions.formatJSONData(weatherJSONData)
+    print(weatherJSONDataFormatted)
+    print("Time to sort by coldest tempF: %.10f seconds" % totalTime)
 ```
 # Databases
 
