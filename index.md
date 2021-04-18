@@ -70,7 +70,7 @@ while True:
 ```
 # Algorithms and Data Structures
 
-<img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/WeatherStationScreenshots/Weather%20Station%20RPi.jpg" width="200" height="400"/>
+<img src="./WeatherStationScreenshots/Weather%20Station%20RPi.jpg" width="200" height="400"/>
 
 This is a weather station project written in python running on a Raspberry Pi with multiple sensors attached. The data is saved into a JSON file which is then read by a seperate tool I created in python to show the data sorted by temperature and humidity. The time taken for the sorting algorithm to sort and display that data is then displayed with the output of the sortted data.
 
@@ -100,7 +100,7 @@ def sortByColdestTempF():
 ```
 # Databases
 
-<img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/AndroidInventoryApp%20Screenshots/Grid%20with%20items.png" width="200" height="400"/>
+<img src="./AndroidInventoryApp%20Screenshots/Grid%20with%20items.png" width="200" height="400"/>
 
 This is an Android inventory app that uses SQLite to authenticate users and track inventory. It can do 
 all the basic CRUD operations like adding items, editing items, and deleting items. It also gives the option to 
