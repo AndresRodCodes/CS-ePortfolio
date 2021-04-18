@@ -1,10 +1,6 @@
 
 [Code Review Video](https://youtu.be/yoo4tMssymM)
 
-[Weather Station with Python and RaspberryPi.zip](https://github.com/Ar64/CS-ePortfolio/files/6268387/Weather.Station.with.Python.and.RaspberryPi.zip)
-
-[AndroidInventoryApp.zip](https://github.com/Ar64/CS-ePortfolio/files/6332211/AndresRodriguezInventoryApp.zip)
-
 [Professional Self-Assessment and Narratives.docx](https://github.com/Ar64/CS-ePortfolio/files/6332244/Professional.Self-Assessment.docx)
 
 ## Andres Rodriguez Computer Science ePortfolio
@@ -12,6 +8,8 @@
 This page is to showcase three of my best CS projects created during my undergraduate studies at Southern New Hampshire University.
 
 # Software Design/Engineering
+
+[Weather Station with Python and RaspberryPi.zip](https://github.com/Ar64/CS-ePortfolio/files/6268387/Weather.Station.with.Python.and.RaspberryPi.zip)
 
 <img src="./WeatherStationScreenshots/Weather%20Station%20RPi.jpg" width="200" height="400"/>
 
@@ -74,6 +72,8 @@ while True:
 ```
 # Algorithms and Data Structures
 
+[Weather Station with Python and RaspberryPi.zip](https://github.com/Ar64/CS-ePortfolio/files/6268387/Weather.Station.with.Python.and.RaspberryPi.zip)
+
 <img src="./WeatherStationScreenshots/Weather%20Station%20RPi.jpg" width="200" height="400"/>
 
 This is a weather station project written in python running on a Raspberry Pi with multiple sensors attached. The data is saved into a JSON file which is then read by a seperate tool I created in python to show the data sorted by temperature and humidity. The time taken for the sorting algorithm to sort and display that data is then displayed with the output of the sortted data.
@@ -103,6 +103,8 @@ def sortByColdestTempF():
     print("Time to sort by coldest tempF: %.10f seconds" % totalTime)
 ```
 # Databases
+
+[AndroidInventoryApp.zip](https://github.com/Ar64/CS-ePortfolio/files/6332211/AndresRodriguezInventoryApp.zip)
 
 <img src="./AndroidInventoryApp%20Screenshots/Grid%20with%20items.png" width="200" height="400"/>
 
