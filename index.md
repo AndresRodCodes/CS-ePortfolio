@@ -9,7 +9,7 @@ This page is to showcase three of my best CS projects created during my undergra
 
 # Software Design/Engineering
 
-![Weather Station Image](https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/WeatherStationScreenshots/Weather%20Station%20RPi.jpg)
+<img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/WeatherStationScreenshots/Weather%20Station%20RPi.jpg" width="200" height="400"/>
 
 This is a weather station project written in python running on a Raspberry Pi with multiple sensors attached. It reads sensor data, saves it to JSON file, and 
 gives the option to sort that data with a seprate tool I created. I refactored the code from a one file program, to multi page program to increase maintainability and modularity.
@@ -70,7 +70,6 @@ while True:
 ```
 # Algorithms and Data Structures
 
-![Weather Station Image](https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/WeatherStationScreenshots/Weather%20Station%20RPi.jpg)
 <img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/WeatherStationScreenshots/Weather%20Station%20RPi.jpg" width="200" height="400"/>
 
 This is a weather station project written in python running on a Raspberry Pi with multiple sensors attached. The data is saved into a JSON file which is then read by a seperate tool I created in python to show the data sorted by temperature and humidity. The time taken for the sorting algorithm to sort and display that data is then displayed with the output of the sortted data.
@@ -101,7 +100,6 @@ def sortByColdestTempF():
 ```
 # Databases
 
-![Weather Station Image](https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/WeatherStationScreenshots/Weather%20Station%20RPi.jpg)
 <img src="https://github.com/Ar64/CS-ePortfolio/blob/gh-pages/AndroidInventoryApp%20Screenshots/Grid%20with%20items.png" width="200" height="400"/>
 
 This is an Android inventory app that uses SQLite to authenticate users and track inventory. It can do 
