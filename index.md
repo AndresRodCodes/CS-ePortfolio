@@ -1,4 +1,6 @@
 
+[Code Review Video](https://youtu.be/yoo4tMssymM)
+
 [Weather Station with Python and RaspberryPi.zip](https://github.com/Ar64/CS-ePortfolio/files/6268387/Weather.Station.with.Python.and.RaspberryPi.zip)
 
 [AndroidInventoryApp.zip](https://github.com/Ar64/CS-ePortfolio/files/6332211/AndresRodriguezInventoryApp.zip)
