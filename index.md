@@ -3,6 +3,8 @@
 
 [AndroidInventoryApp.zip](https://github.com/Ar64/CS-ePortfolio/files/6332211/AndresRodriguezInventoryApp.zip)
 
+[Professional Self-Assessment.docx](https://github.com/Ar64/CS-ePortfolio/files/6332244/Professional.Self-Assessment.docx)
+
 ## Andres Rodriguez Computer Science ePortfolio
 
 This page is to showcase three of my best CS projects created during my undergraduate studies at Southern New Hampshire University.
