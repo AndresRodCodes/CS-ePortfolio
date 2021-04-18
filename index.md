@@ -5,7 +5,7 @@
 
 [AndroidInventoryApp.zip](https://github.com/Ar64/CS-ePortfolio/files/6332211/AndresRodriguezInventoryApp.zip)
 
-[Professional Self-Assessment.docx](https://github.com/Ar64/CS-ePortfolio/files/6332244/Professional.Self-Assessment.docx)
+[Professional Self-Assessment and Narratives.docx](https://github.com/Ar64/CS-ePortfolio/files/6332244/Professional.Self-Assessment.docx)
 
 ## Andres Rodriguez Computer Science ePortfolio
 
